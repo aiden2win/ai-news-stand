@@ -25,3 +25,4 @@ dist-ssr
 data/raw/
 data/processed/
 logs/agent/
+.vercel
