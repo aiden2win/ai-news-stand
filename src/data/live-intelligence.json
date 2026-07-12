@@ -1,0 +1,878 @@
+{
+  "generatedAt": "2026-07-12T14:21:39.447Z",
+  "automation": {
+    "llmEnabled": false,
+    "llmModel": null,
+    "llmApplied": false,
+    "llmError": null,
+    "mode": "local-agent",
+    "refreshCadence": "Daily at 07:00 KST via local agent runner",
+    "buildCommand": "npm run agent:run && npm run build"
+  },
+  "brief": {
+    "headline": "0개의 Critical 신호와 OpenAI가 오늘의 흐름을 주도",
+    "summary": "오늘 수집본은 34건이며, 이 중 0건이 즉시 확인이 필요한 high-signal 이슈다. 핵심 테마는 OpenAI, Coding, General AI, Anthropic 중심으로 모였다. 특히 OpenAI, Meta, GitHub, Anthropic, Apple 관련 노출이 많았다. 가장 최근 헤드라인은 Apple Is Suing OpenAI Because Hardware Is Still the Moat / Introducing Spark UI v1: An Open-Source React Component Registry with an Agent Skill / How to Build Your Own RAG Knowledge Base Q&A System with DeepSeek.",
+    "topThemes": [
+      "OpenAI",
+      "Coding",
+      "General AI",
+      "Anthropic"
+    ],
+    "mustWatch": [
+      "TechCrunch AI: OpenAI bets on families as ChatGPT goes deeper into households",
+      "The Verge AI: Apple sues OpenAI for allegedly stealing hardware secrets",
+      "TechCrunch AI: Open source AI matters more than ever, according to Hugging Face&#8217;s Clem Delangue",
+      "TechCrunch AI: Elon Musk praises Mythos/Fable, promises not to &#8216;cut off&#8217; Anthropic"
+    ],
+    "editorNote": "OpenAI 관련 뉴스가 가장 많이 잡혔고, 전체 흐름은 Product Update 중심으로 움직였다."
+  },
+  "stats": {
+    "totalStories": 34,
+    "totalSources": 6,
+    "criticalCount": 0,
+    "newsStories": 14,
+    "socialStories": 8
+  },
+  "facets": {
+    "categories": [
+      {
+        "value": "Product Update",
+        "count": 13,
+        "share": 38
+      },
+      {
+        "value": "Model Release",
+        "count": 11,
+        "share": 32
+      },
+      {
+        "value": "Regulation & Policy",
+        "count": 4,
+        "share": 12
+      },
+      {
+        "value": "Funding & M&A",
+        "count": 3,
+        "share": 9
+      },
+      {
+        "value": "Research & Safety",
+        "count": 2,
+        "share": 6
+      },
+      {
+        "value": "Market Pulse",
+        "count": 1,
+        "share": 3
+      }
+    ],
+    "entities": [
+      {
+        "value": "OpenAI",
+        "count": 17,
+        "share": 44
+      },
+      {
+        "value": "Meta",
+        "count": 5,
+        "share": 13
+      },
+      {
+        "value": "GitHub",
+        "count": 4,
+        "share": 10
+      },
+      {
+        "value": "Anthropic",
+        "count": 4,
+        "share": 10
+      },
+      {
+        "value": "Apple",
+        "count": 3,
+        "share": 8
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "techcrunch-ai",
+      "label": "TechCrunch AI",
+      "type": "news",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "storyCount": 12
+    },
+    {
+      "id": "the-verge-ai",
+      "label": "The Verge AI",
+      "type": "news",
+      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "storyCount": 10
+    },
+    {
+      "id": "openai-news",
+      "label": "OpenAI News",
+      "type": "official",
+      "url": "https://openai.com/news/rss.xml",
+      "storyCount": 12
+    },
+    {
+      "id": "google-ai-blog",
+      "label": "Google AI Blog",
+      "type": "official",
+      "url": "https://blog.google/technology/ai/rss/",
+      "storyCount": 12
+    },
+    {
+      "id": "hn-ai",
+      "label": "Hacker News AI",
+      "type": "social",
+      "url": "https://hnrss.org/newest?q=AI",
+      "storyCount": 8
+    },
+    {
+      "id": "devto-ai",
+      "label": "DEV Community AI",
+      "type": "social",
+      "url": "https://dev.to/feed/tag/ai",
+      "storyCount": 8
+    }
+  ],
+  "stories": [
+    {
+      "id": "techcrunch-ai-1",
+      "title": "OpenAI bets on families as ChatGPT goes deeper into households",
+      "summary": "ChatGPT is hiring a dedicated product manager to build experiences for families, caregivers, and older adults, according to a job posting.",
+      "url": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
+      "publisher": "TechCrunch AI",
+      "sourceType": "news",
+      "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "publishedAt": "2026-07-11T14:13:00.000Z",
+      "category": "Model Release",
+      "topics": [
+        "OpenAI"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "importanceScore": 83,
+      "importance": "High",
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "the-verge-ai-3",
+      "title": "Apple sues OpenAI for allegedly stealing hardware secrets",
+      "summary": "Apple has sued OpenAI, alleging that engineers stole Apple secrets to advance the AI startup's hardware plans. In its complaint, Apple says it uncovered \"a pattern of theft of Apple's trade secrets by OpenAI employees who were formerly a...",
+      "url": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
+      "publisher": "The Verge AI",
+      "sourceType": "news",
+      "sourceUrl": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "publishedAt": "2026-07-10T21:36:51.000Z",
+      "category": "Regulation & Policy",
+      "topics": [
+        "OpenAI",
+        "Policy"
+      ],
+      "entities": [
+        "OpenAI",
+        "Apple"
+      ],
+      "importanceScore": 80,
+      "importance": "High",
+      "whyItMatters": "The Verge AI발 규제 이슈라서 제품 출시 속도보다 법무·리스크 대응 우선순위를 바꿀 수 있다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "techcrunch-ai-4",
+      "title": "Open source AI matters more than ever, according to Hugging Face&#8217;s Clem Delangue",
+      "summary": "Open source AI is booming, according to&#160;Hugging Face&#160;CEO&#160;Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used...",
+      "url": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
+      "publisher": "TechCrunch AI",
+      "sourceType": "news",
+      "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "publishedAt": "2026-07-10T19:00:00.000Z",
+      "category": "Model Release",
+      "topics": [
+        "General AI"
+      ],
+      "entities": [
+        "GitHub"
+      ],
+      "importanceScore": 74,
+      "importance": "High",
+      "whyItMatters": "General AI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "GitHub의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "techcrunch-ai-12",
+      "title": "Elon Musk praises Mythos/Fable, promises not to &#8216;cut off&#8217; Anthropic",
+      "summary": "Should Anthropic trust Elon Musk to host its models? With about $40 billion in revenue at stake, Musk insists that the company can.",
+      "url": "https://techcrunch.com/2026/07/09/elon-musk-praises-mythos-fable-promises-not-to-cut-off-anthropic/",
+      "publisher": "TechCrunch AI",
+      "sourceType": "news",
+      "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "publishedAt": "2026-07-09T21:57:42.000Z",
+      "category": "Model Release",
+      "topics": [
+        "Anthropic"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "importanceScore": 73,
+      "importance": "High",
+      "whyItMatters": "Anthropic 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "Anthropic의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "openai-news-2",
+      "title": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
+      "summary": "Learn how GPT-5.6 powers Microsoft 365 Copilot with stronger AI capabilities across Word, Excel, PowerPoint, Chat, and Cowork for faster, higher-quality work.",
+      "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+      "publisher": "OpenAI News",
+      "sourceType": "official",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-07-09T13:00:00.000Z",
+      "category": "Model Release",
+      "topics": [
+        "OpenAI"
+      ],
+      "entities": [
+        "Microsoft"
+      ],
+      "importanceScore": 73,
+      "importance": "High",
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "Microsoft의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "openai-news-7",
+      "title": "Separating signal from noise in coding evaluations",
+      "summary": "A new analysis from OpenAI reveals issues in SWE-Bench Pro, a popular coding benchmark, raising concerns about reliability and accuracy in evaluating AI models.",
+      "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+      "publisher": "OpenAI News",
+      "sourceType": "official",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-07-08T13:00:00.000Z",
+      "category": "Research & Safety",
+      "topics": [
+        "OpenAI",
+        "Coding",
+        "Research"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "importanceScore": 72,
+      "importance": "High",
+      "whyItMatters": "기술 성능 자체보다도 향후 제품 신뢰도와 엔터프라이즈 도입 명분에 영향을 줄 수 있는 신호다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "techcrunch-ai-6",
+      "title": "Hugging Face&#8217;s CEO on why companies are done renting their AI",
+      "summary": "Open source AI is booming, according to&#160;Hugging Face&#160;CEO&#160;Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used...",
+      "url": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/",
+      "publisher": "TechCrunch AI",
+      "sourceType": "news",
+      "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "publishedAt": "2026-07-10T14:00:00.000Z",
+      "category": "Model Release",
+      "topics": [
+        "General AI"
+      ],
+      "entities": [
+        "GitHub"
+      ],
+      "importanceScore": 71,
+      "importance": "Medium",
+      "whyItMatters": "General AI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "GitHub의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "the-verge-ai-1",
+      "title": "The fight against AI data centers is just beginning",
+      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the data center buildout, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The...",
+      "url": "https://www.theverge.com/column/963346/ai-data-centers-fight",
+      "publisher": "The Verge AI",
+      "sourceType": "news",
+      "sourceUrl": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "publishedAt": "2026-07-12T12:00:00.000Z",
+      "category": "Market Pulse",
+      "topics": [
+        "General AI"
+      ],
+      "entities": [],
+      "importanceScore": 70,
+      "importance": "Medium",
+      "whyItMatters": "General AI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "General AI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "openai-news-10",
+      "title": "MUFG aims to become AI-native with OpenAI",
+      "summary": "MUFG uses ChatGPT Enterprise to build an AI-native organization, improve workflows, and deliver new AI-powered financial services at scale.",
+      "url": "https://openai.com/index/mufg",
+      "publisher": "OpenAI News",
+      "sourceType": "official",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-07-07T00:00:00.000Z",
+      "category": "Model Release",
+      "topics": [
+        "OpenAI",
+        "Enterprise"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "importanceScore": 70,
+      "importance": "Medium",
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "techcrunch-ai-3",
+      "title": "Apple sues OpenAI over alleged trade secret theft",
+      "summary": "Apple alleges the misconduct was directed by OpenAI's senior leadership, including a longtime former employee.",
+      "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+      "publisher": "TechCrunch AI",
+      "sourceType": "news",
+      "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "publishedAt": "2026-07-10T21:00:29.000Z",
+      "category": "Product Update",
+      "topics": [
+        "OpenAI"
+      ],
+      "entities": [
+        "OpenAI",
+        "Apple"
+      ],
+      "importanceScore": 69,
+      "importance": "Medium",
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "techcrunch-ai-7",
+      "title": "OpenAI says GPT 5.6 is the &#8216;preferred model&#8217; for Microsoft Copilot 365 amid breakup chatter",
+      "summary": "OpenAI's new family of models will continue to power Microsoft's suite of workplace and productivity apps.",
+      "url": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/",
+      "publisher": "TechCrunch AI",
+      "sourceType": "news",
+      "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "publishedAt": "2026-07-10T00:16:54.000Z",
+      "category": "Product Update",
+      "topics": [
+        "OpenAI"
+      ],
+      "entities": [
+        "OpenAI",
+        "Microsoft"
+      ],
+      "importanceScore": 69,
+      "importance": "Medium",
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "techcrunch-ai-9",
+      "title": "OpenAI launches its new family of models with GPT-5.6",
+      "summary": "OpenAI's latest family of models promises improvements across a range of areas, including cybersecurity.",
+      "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
+      "publisher": "TechCrunch AI",
+      "sourceType": "news",
+      "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "publishedAt": "2026-07-09T22:24:24.000Z",
+      "category": "Product Update",
+      "topics": [
+        "OpenAI"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "importanceScore": 69,
+      "importance": "Medium",
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "techcrunch-ai-11",
+      "title": "OpenAI is shutting down Atlas, but its AI browser ambitions are still growing",
+      "summary": "OpenAI is sunsetting its AI-powered browser after less than a year. But it's moving some agentic browsing features to its desktop app and a Chrome extension.",
+      "url": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/",
+      "publisher": "TechCrunch AI",
+      "sourceType": "news",
+      "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "publishedAt": "2026-07-09T22:03:54.000Z",
+      "category": "Product Update",
+      "topics": [
+        "OpenAI"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "importanceScore": 69,
+      "importance": "Medium",
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "openai-news-5",
+      "title": "GPT-5.5 Bio Bug Bounty",
+      "summary": "Details about the OpenAI Bio Bounty program",
+      "url": "https://openai.com/index/bio-bug-bounty",
+      "publisher": "OpenAI News",
+      "sourceType": "official",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-07-09T10:00:00.000Z",
+      "category": "Model Release",
+      "topics": [
+        "OpenAI"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "importanceScore": 69,
+      "importance": "Medium",
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "openai-news-12",
+      "title": "How ChatGPT adoption has expanded",
+      "summary": "New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages.",
+      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+      "publisher": "OpenAI News",
+      "sourceType": "official",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-06-30T09:00:00.000Z",
+      "category": "Model Release",
+      "topics": [
+        "OpenAI"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "importanceScore": 69,
+      "importance": "Medium",
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "openai-news-6",
+      "title": "Our approach to government and national security partnerships",
+      "summary": "Learn how OpenAI approaches government and national security partnerships, with principles for responsible AI use, democratic accountability, and public safety.",
+      "url": "https://openai.com/index/government-national-security-partnerships",
+      "publisher": "OpenAI News",
+      "sourceType": "official",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-07-08T13:30:00.000Z",
+      "category": "Regulation & Policy",
+      "topics": [
+        "OpenAI",
+        "Policy"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "importanceScore": 68,
+      "importance": "Medium",
+      "whyItMatters": "OpenAI News발 규제 이슈라서 제품 출시 속도보다 법무·리스크 대응 우선순위를 바꿀 수 있다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "techcrunch-ai-5",
+      "title": "SK Hynix raises $26.5B in the biggest foreign IPO in US history, is urged to build new US fabs",
+      "summary": "The AI chip boom just produced its biggest Wall Street moment yet. Now SK Hynix and Samsung are being asked to build U.S. factories.",
+      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
+      "publisher": "TechCrunch AI",
+      "sourceType": "news",
+      "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "publishedAt": "2026-07-10T17:17:12.000Z",
+      "category": "Funding & M&A",
+      "topics": [
+        "General AI"
+      ],
+      "entities": [],
+      "importanceScore": 67,
+      "importance": "Medium",
+      "whyItMatters": "TechCrunch AI의 자금/딜 움직임은 향후 가격 경쟁과 시장 확장 속도에 직접 연결될 수 있다.",
+      "watchlist": "General AI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "the-verge-ai-8",
+      "title": "The ChatGPT browser is already dead",
+      "summary": "OpenAI is already shutting down ChatGPT Atlas, its browser that could do tasks for you on your behalf, less than a year after launching it. Atlas was announced in October, but as part of its wave of news about ChatGPT Work today, the com...",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset",
+      "publisher": "The Verge AI",
+      "sourceType": "news",
+      "sourceUrl": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "publishedAt": "2026-07-09T20:34:05.000Z",
+      "category": "Product Update",
+      "topics": [
+        "OpenAI"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "importanceScore": 67,
+      "importance": "Medium",
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "openai-news-9",
+      "title": "Introducing GPT-Live",
+      "summary": "A new generation of voice models for natural human-AI interaction, now powering ChatGPT Voice.",
+      "url": "https://openai.com/index/introducing-gpt-live",
+      "publisher": "OpenAI News",
+      "sourceType": "official",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-07-08T00:00:00.000Z",
+      "category": "Model Release",
+      "topics": [
+        "OpenAI"
+      ],
+      "entities": [],
+      "importanceScore": 67,
+      "importance": "Medium",
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "techcrunch-ai-2",
+      "title": "Meta removes controversial AI feature on Instagram after backlash",
+      "summary": "\"Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way,\" the company said in a blog post. \"We've heard the feedback that this feature missed the mark...",
+      "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
+      "publisher": "TechCrunch AI",
+      "sourceType": "news",
+      "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "publishedAt": "2026-07-10T23:55:07.000Z",
+      "category": "Product Update",
+      "topics": [
+        "Meta"
+      ],
+      "entities": [
+        "Meta"
+      ],
+      "importanceScore": 66,
+      "importance": "Medium",
+      "whyItMatters": "Meta 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "Meta의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "devto-ai-3",
+      "title": "How to Build Your Own RAG Knowledge Base Q&A System with DeepSeek",
+      "summary": "Category: AI Application Engineering / RAG Knowledge Base Q&A Target readers: backend developers, AI full-stack developers, enterprise digital teams, product managers, technical leads, and anyone who wants to turn company documents into...",
+      "url": "https://dev.to/cheng_zhang_45ee857b979b0/how-to-build-your-own-rag-knowledge-base-qa-system-with-deepseek-3dl9",
+      "publisher": "DEV Community AI",
+      "sourceType": "social",
+      "sourceUrl": "https://dev.to/feed/tag/ai",
+      "publishedAt": "2026-07-12T14:10:53.000Z",
+      "category": "Regulation & Policy",
+      "topics": [
+        "OpenAI",
+        "Anthropic",
+        "Meta",
+        "Coding",
+        "Agents",
+        "Enterprise",
+        "Research",
+        "Policy"
+      ],
+      "entities": [
+        "OpenAI",
+        "Anthropic",
+        "Meta",
+        "GitHub"
+      ],
+      "importanceScore": 64,
+      "importance": "Medium",
+      "whyItMatters": "DEV Community AI발 규제 이슈라서 제품 출시 속도보다 법무·리스크 대응 우선순위를 바꿀 수 있다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "the-verge-ai-2",
+      "title": "Meta turns off the Instagram feature that let users make AI deepfakes of public accounts",
+      "summary": "Following significant backlash, Meta is turning off the feature it announced this week that let users generate AI images based on content from public Instagram accounts just by tagging them. The feature, as originally set up, meant that...",
+      "url": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
+      "publisher": "The Verge AI",
+      "sourceType": "news",
+      "sourceUrl": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "publishedAt": "2026-07-10T23:49:50.000Z",
+      "category": "Product Update",
+      "topics": [
+        "Meta"
+      ],
+      "entities": [
+        "Meta"
+      ],
+      "importanceScore": 64,
+      "importance": "Medium",
+      "whyItMatters": "Meta 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "Meta의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "google-ai-blog-6",
+      "title": "Our latest Google Finance upgrades, including a new app",
+      "summary": "The new Google Finance is coming out of beta and launching a new Android app.",
+      "url": "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/",
+      "publisher": "Google AI Blog",
+      "sourceType": "official",
+      "sourceUrl": "https://blog.google/technology/ai/rss/",
+      "publishedAt": "2026-06-25T16:00:00.000Z",
+      "category": "Product Update",
+      "topics": [
+        "Google"
+      ],
+      "entities": [
+        "Google"
+      ],
+      "importanceScore": 64,
+      "importance": "Medium",
+      "whyItMatters": "Google 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "Google의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "openai-news-4",
+      "title": "ChatGPT is now a partner for your most ambitious work",
+      "summary": "ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.",
+      "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
+      "publisher": "OpenAI News",
+      "sourceType": "official",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-07-09T10:00:00.000Z",
+      "category": "Product Update",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "importanceScore": 63,
+      "importance": "Medium",
+      "whyItMatters": "Agents 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "Agents의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "hn-ai-7",
+      "title": "Microsoft joins Google in backing Go for AI agents — OpenAI and Anthropic lag",
+      "summary": "Article URL: https://thenewstack.io/microsoft-agent-framework-go/ Comments URL: https://news.ycombinator.com/item?id=48881161 Points: 3 # Comments: 0",
+      "url": "https://thenewstack.io/microsoft-agent-framework-go/",
+      "publisher": "Hacker News AI",
+      "sourceType": "social",
+      "sourceUrl": "https://hnrss.org/newest?q=AI",
+      "publishedAt": "2026-07-12T13:39:33.000Z",
+      "category": "Product Update",
+      "topics": [
+        "OpenAI",
+        "Anthropic",
+        "Google",
+        "Agents"
+      ],
+      "entities": [
+        "OpenAI",
+        "Anthropic",
+        "Google",
+        "Microsoft"
+      ],
+      "importanceScore": 62,
+      "importance": "Medium",
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "devto-ai-1",
+      "title": "Apple Is Suing OpenAI Because Hardware Is Still the Moat",
+      "summary": "Apple Is Suing OpenAI Because Hardware Is Still the Moat Apple sued OpenAI on July 10, accusing the company and two former Apple employees of taking confidential hardware information for OpenAI's consumer device work. Treat the verbs car...",
+      "url": "https://dev.to/komo/apple-is-suing-openai-because-hardware-is-still-the-moat-1ofi",
+      "publisher": "DEV Community AI",
+      "sourceType": "social",
+      "sourceUrl": "https://dev.to/feed/tag/ai",
+      "publishedAt": "2026-07-12T14:14:47.000Z",
+      "category": "Regulation & Policy",
+      "topics": [
+        "OpenAI",
+        "Coding",
+        "Policy"
+      ],
+      "entities": [
+        "OpenAI",
+        "Apple"
+      ],
+      "importanceScore": 60,
+      "importance": "Medium",
+      "whyItMatters": "DEV Community AI발 규제 이슈라서 제품 출시 속도보다 법무·리스크 대응 우선순위를 바꿀 수 있다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "openai-news-3",
+      "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+      "summary": "More intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work.",
+      "url": "https://openai.com/index/gpt-5-6",
+      "publisher": "OpenAI News",
+      "sourceType": "official",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-07-09T10:00:00.000Z",
+      "category": "Model Release",
+      "topics": [
+        "OpenAI"
+      ],
+      "entities": [],
+      "importanceScore": 59,
+      "importance": "Medium",
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "google-ai-blog-1",
+      "title": "Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more",
+      "summary": "We’re announcing new capabilities in Managed Agents in Gemini API so developers can build reliable, production-ready agents.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
+      "publisher": "Google AI Blog",
+      "sourceType": "official",
+      "sourceUrl": "https://blog.google/technology/ai/rss/",
+      "publishedAt": "2026-07-07T08:54:00.000Z",
+      "category": "Product Update",
+      "topics": [
+        "Google",
+        "Coding"
+      ],
+      "entities": [],
+      "importanceScore": 59,
+      "importance": "Medium",
+      "whyItMatters": "Google 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "Google의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "openai-news-11",
+      "title": "Australian Payments Plus moves faster with ChatGPT and Codex",
+      "summary": "See how Australian Payments Plus uses ChatGPT Enterprise and Codex to move faster through payments complexity. AP+ saves time, improves quality, and keeps human judgment central.",
+      "url": "https://openai.com/index/australian-payments-plus",
+      "publisher": "OpenAI News",
+      "sourceType": "official",
+      "sourceUrl": "https://openai.com/news/rss.xml",
+      "publishedAt": "2026-07-07T00:00:00.000Z",
+      "category": "Model Release",
+      "topics": [
+        "Enterprise"
+      ],
+      "entities": [],
+      "importanceScore": 59,
+      "importance": "Medium",
+      "whyItMatters": "Enterprise 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "Enterprise의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "devto-ai-2",
+      "title": "Introducing Spark UI v1: An Open-Source React Component Registry with an Agent Skill",
+      "summary": "Introducing Spark UI v1: An Open-Source React Component Registry with an Agent Skill ⚡ I’m excited to share Spark UI v1 , the first public version of an open-source component collection built for modern React applications. Spark UI curre...",
+      "url": "https://dev.to/a11en/introducing-spark-ui-v1-an-open-source-react-component-registry-with-an-agent-skill-kn3",
+      "publisher": "DEV Community AI",
+      "sourceType": "social",
+      "sourceUrl": "https://dev.to/feed/tag/ai",
+      "publishedAt": "2026-07-12T14:14:27.000Z",
+      "category": "Product Update",
+      "topics": [
+        "Anthropic",
+        "Coding",
+        "Agents"
+      ],
+      "entities": [
+        "Meta",
+        "GitHub"
+      ],
+      "importanceScore": 56,
+      "importance": "Medium",
+      "whyItMatters": "Anthropic 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "Meta의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "devto-ai-8",
+      "title": "Build Your Own ChatGPT with Free APIs in 2025",
+      "summary": "Build Your Own ChatGPT with Free APIs in 2025 Imagine being able to create your own AI-powered chatbot, capable of understanding and responding to user input, without breaking the bank or requiring a team of expert developers. Sounds lik...",
+      "url": "https://dev.to/qingluan/build-your-own-chatgpt-with-free-apis-in-2025-3dad",
+      "publisher": "DEV Community AI",
+      "sourceType": "social",
+      "sourceUrl": "https://dev.to/feed/tag/ai",
+      "publishedAt": "2026-07-12T14:03:12.000Z",
+      "category": "Product Update",
+      "topics": [
+        "OpenAI",
+        "Google",
+        "Coding"
+      ],
+      "entities": [
+        "OpenAI",
+        "Google"
+      ],
+      "importanceScore": 56,
+      "importance": "Medium",
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "devto-ai-5",
+      "title": "Prompt Cache Minimums: The Docs Under-State by 1.4–2.4x",
+      "summary": "A customer told us prompt caching on our gateway was not kicking in at the token count the model's own documentation promised. We reproduced it, then re-ran every model against a second, independent serving path, one of the largest AI ga...",
+      "url": "https://dev.to/synthorai/prompt-cache-minimums-the-docs-under-state-by-14-24x-49m6",
+      "publisher": "DEV Community AI",
+      "sourceType": "social",
+      "sourceUrl": "https://dev.to/feed/tag/ai",
+      "publishedAt": "2026-07-12T14:04:51.000Z",
+      "category": "Research & Safety",
+      "topics": [
+        "OpenAI",
+        "Anthropic",
+        "Google",
+        "Coding"
+      ],
+      "entities": [
+        "OpenAI",
+        "Anthropic",
+        "Meta"
+      ],
+      "importanceScore": 55,
+      "importance": "Medium",
+      "whyItMatters": "기술 성능 자체보다도 향후 제품 신뢰도와 엔터프라이즈 도입 명분에 영향을 줄 수 있는 신호다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "devto-ai-6",
+      "title": "Borrow $2.500 Instantly: The Quickest Path to Crypto Liquidity",
+      "summary": "You have $5,000 in Bitcoin sitting in your wallet. You need $2,500 in cash—and you need it today. Selling would trigger taxes and cost you future upside. Waiting days for a bank loan isn't an option. ⚡ 🔥 💎👑◢◤ Contact Us ⚡ 🔥 💎👑◢◤ ne...",
+      "url": "https://dev.to/sarfw4e456/borrow-2500-instantly-the-quickest-path-to-crypto-liquidity-20h5",
+      "publisher": "DEV Community AI",
+      "sourceType": "social",
+      "sourceUrl": "https://dev.to/feed/tag/ai",
+      "publishedAt": "2026-07-12T14:04:49.000Z",
+      "category": "Funding & M&A",
+      "topics": [
+        "General AI"
+      ],
+      "entities": [],
+      "importanceScore": 45,
+      "importance": "Low",
+      "whyItMatters": "DEV Community AI의 자금/딜 움직임은 향후 가격 경쟁과 시장 확장 속도에 직접 연결될 수 있다.",
+      "watchlist": "General AI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "devto-ai-7",
+      "title": "Ready for $2.500? Access Your Crypto-Backed Loan Right Now",
+      "summary": "You have $5,000 in Bitcoin. You need $2,500 in cash. Selling would trigger capital gains taxes and cost you future upside—but you need liquidity now. ⚡ 🔥 💎👑◢◤ Contact Us ⚡ 🔥 💎👑◢◤ needhelp@omnilender.com ⚡ 🔥 💎👑◢◤ +1 (301) 760 231...",
+      "url": "https://dev.to/sarfw4e456/ready-for-2500-access-your-crypto-backed-loan-right-now-4cm5",
+      "publisher": "DEV Community AI",
+      "sourceType": "social",
+      "sourceUrl": "https://dev.to/feed/tag/ai",
+      "publishedAt": "2026-07-12T14:04:11.000Z",
+      "category": "Funding & M&A",
+      "topics": [
+        "Research"
+      ],
+      "entities": [],
+      "importanceScore": 45,
+      "importance": "Low",
+      "whyItMatters": "DEV Community AI의 자금/딜 움직임은 향후 가격 경쟁과 시장 확장 속도에 직접 연결될 수 있다.",
+      "watchlist": "Research의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    }
+  ]
+}
