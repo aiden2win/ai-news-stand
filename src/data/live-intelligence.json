@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T14:23:51.966Z",
+  "generatedAt": "2026-07-12T22:00:28.681Z",
   "automation": {
     "llmEnabled": false,
     "llmModel": null,
@@ -11,18 +11,18 @@
   },
   "brief": {
     "headline": "0개의 Critical 신호와 OpenAI가 오늘의 흐름을 주도",
-    "summary": "오늘 수집본은 34건이며, 이 중 0건이 즉시 확인이 필요한 high-signal 이슈다. 핵심 테마는 OpenAI, Coding, General AI, Anthropic 중심으로 모였다. 특히 OpenAI, Meta, GitHub, Anthropic, Apple 관련 노출이 많았다. 가장 최근 헤드라인은 Apple Is Suing OpenAI Because Hardware Is Still the Moat / Introducing Spark UI v1: An Open-Source React Component Registry with an Agent Skill / How to Build Your Own RAG Knowledge Base Q&A System with DeepSeek.",
+    "summary": "오늘 수집본은 34건이며, 이 중 0건이 즉시 확인이 필요한 high-signal 이슈다. 핵심 테마는 OpenAI, General AI, Agents, Coding 중심으로 모였다. 특히 OpenAI, GitHub, Meta, Apple, Google 관련 노출이 많았다. 가장 최근 헤드라인은 A shipped agent framework ran the hidden payload. My own scanner caught it. / Adaptive Neuro-Symbolic Planning for heritage language revitalization programs with inverse simulation verification / I Made $487 Last Month Promoting AI Tools as an Affiliate — Here's My Full Stack Breakdown.",
     "topThemes": [
       "OpenAI",
-      "Coding",
       "General AI",
-      "Anthropic"
+      "Agents",
+      "Coding"
     ],
     "mustWatch": [
       "TechCrunch AI: OpenAI bets on families as ChatGPT goes deeper into households",
-      "The Verge AI: Apple sues OpenAI for allegedly stealing hardware secrets",
-      "TechCrunch AI: Open source AI matters more than ever, according to Hugging Face&#8217;s Clem Delangue",
-      "TechCrunch AI: Elon Musk praises Mythos/Fable, promises not to &#8216;cut off&#8217; Anthropic"
+      "The Verge AI: Lorde says Ray-Ban Meta AI glasses are ‘not sexy’",
+      "The Verge AI: Apple’s failed self-driving car program left a legacy of powerful AI chips",
+      "The Verge AI: Apple sues OpenAI for allegedly stealing hardware secrets"
     ],
     "editorNote": "OpenAI 관련 뉴스가 가장 많이 잡혔고, 전체 흐름은 Product Update 중심으로 움직였다."
   },
@@ -37,8 +37,8 @@
     "categories": [
       {
         "value": "Product Update",
-        "count": 13,
-        "share": 38
+        "count": 12,
+        "share": 35
       },
       {
         "value": "Model Release",
@@ -46,22 +46,22 @@
         "share": 32
       },
       {
-        "value": "Regulation & Policy",
-        "count": 4,
-        "share": 12
-      },
-      {
-        "value": "Funding & M&A",
-        "count": 3,
-        "share": 9
-      },
-      {
         "value": "Research & Safety",
+        "count": 6,
+        "share": 18
+      },
+      {
+        "value": "Market Pulse",
         "count": 2,
         "share": 6
       },
       {
-        "value": "Market Pulse",
+        "value": "Regulation & Policy",
+        "count": 2,
+        "share": 6
+      },
+      {
+        "value": "Funding & M&A",
         "count": 1,
         "share": 3
       }
@@ -69,28 +69,28 @@
     "entities": [
       {
         "value": "OpenAI",
-        "count": 17,
-        "share": 44
-      },
-      {
-        "value": "Meta",
-        "count": 5,
-        "share": 13
+        "count": 12,
+        "share": 39
       },
       {
         "value": "GitHub",
-        "count": 4,
-        "share": 10
+        "count": 5,
+        "share": 16
       },
       {
-        "value": "Anthropic",
-        "count": 4,
+        "value": "Meta",
+        "count": 3,
         "share": 10
       },
       {
         "value": "Apple",
         "count": 3,
-        "share": 8
+        "share": 10
+      },
+      {
+        "value": "Google",
+        "count": 3,
+        "share": 10
       }
     ]
   },
@@ -155,13 +155,55 @@
       "entities": [
         "OpenAI"
       ],
-      "importanceScore": 83,
+      "importanceScore": 79,
       "importance": "High",
       "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
       "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     },
     {
-      "id": "the-verge-ai-3",
+      "id": "the-verge-ai-1",
+      "title": "Lorde says Ray-Ban Meta AI glasses are ‘not sexy’",
+      "summary": "Lorde was performing at the Real Cool Festival in Madrid on Thursday and took some time during her set to speak out against AI glasses. While she didn't specify any brands in particular, it's likely she was taking a shot at festival spon...",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/964539/lorde-says-ray-ban-meta-ai-glasses-are-not-sexy",
+      "publisher": "The Verge AI",
+      "sourceType": "news",
+      "sourceUrl": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "publishedAt": "2026-07-12T20:10:19.000Z",
+      "category": "Market Pulse",
+      "topics": [
+        "Meta"
+      ],
+      "entities": [
+        "Meta"
+      ],
+      "importanceScore": 76,
+      "importance": "High",
+      "whyItMatters": "Meta 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "Meta의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "the-verge-ai-2",
+      "title": "Apple’s failed self-driving car program left a legacy of powerful AI chips",
+      "summary": "Apple's self-driving car program never really got off the ground, but it may have been what made the company's chips the powerful AI performers they are. Early in the development of the self-driving platform, Apple realized that it would...",
+      "url": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
+      "publisher": "The Verge AI",
+      "sourceType": "news",
+      "sourceUrl": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "publishedAt": "2026-07-12T16:27:06.000Z",
+      "category": "Product Update",
+      "topics": [
+        "General AI"
+      ],
+      "entities": [
+        "Apple"
+      ],
+      "importanceScore": 76,
+      "importance": "High",
+      "whyItMatters": "General AI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "Apple의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "the-verge-ai-5",
       "title": "Apple sues OpenAI for allegedly stealing hardware secrets",
       "summary": "Apple has sued OpenAI, alleging that engineers stole Apple secrets to advance the AI startup's hardware plans. In its complaint, Apple says it uncovered \"a pattern of theft of Apple's trade secrets by OpenAI employees who were formerly a...",
       "url": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
@@ -178,31 +220,10 @@
         "OpenAI",
         "Apple"
       ],
-      "importanceScore": 80,
+      "importanceScore": 76,
       "importance": "High",
       "whyItMatters": "The Verge AI발 규제 이슈라서 제품 출시 속도보다 법무·리스크 대응 우선순위를 바꿀 수 있다.",
       "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
-    },
-    {
-      "id": "techcrunch-ai-4",
-      "title": "Open source AI matters more than ever, according to Hugging Face&#8217;s Clem Delangue",
-      "summary": "Open source AI is booming, according to&#160;Hugging Face&#160;CEO&#160;Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used...",
-      "url": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
-      "publisher": "TechCrunch AI",
-      "sourceType": "news",
-      "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-      "publishedAt": "2026-07-10T19:00:00.000Z",
-      "category": "Model Release",
-      "topics": [
-        "General AI"
-      ],
-      "entities": [
-        "GitHub"
-      ],
-      "importanceScore": 74,
-      "importance": "High",
-      "whyItMatters": "General AI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
-      "watchlist": "GitHub의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     },
     {
       "id": "techcrunch-ai-12",
@@ -270,14 +291,14 @@
       "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     },
     {
-      "id": "techcrunch-ai-6",
-      "title": "Hugging Face&#8217;s CEO on why companies are done renting their AI",
+      "id": "techcrunch-ai-4",
+      "title": "Open source AI matters more than ever, according to Hugging Face&#8217;s Clem Delangue",
       "summary": "Open source AI is booming, according to&#160;Hugging Face&#160;CEO&#160;Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used...",
-      "url": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/",
+      "url": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
       "publisher": "TechCrunch AI",
       "sourceType": "news",
       "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-      "publishedAt": "2026-07-10T14:00:00.000Z",
+      "publishedAt": "2026-07-10T19:00:00.000Z",
       "category": "Model Release",
       "topics": [
         "General AI"
@@ -285,29 +306,10 @@
       "entities": [
         "GitHub"
       ],
-      "importanceScore": 71,
-      "importance": "Medium",
-      "whyItMatters": "General AI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
-      "watchlist": "GitHub의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
-    },
-    {
-      "id": "the-verge-ai-1",
-      "title": "The fight against AI data centers is just beginning",
-      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the data center buildout, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The...",
-      "url": "https://www.theverge.com/column/963346/ai-data-centers-fight",
-      "publisher": "The Verge AI",
-      "sourceType": "news",
-      "sourceUrl": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
-      "publishedAt": "2026-07-12T12:00:00.000Z",
-      "category": "Market Pulse",
-      "topics": [
-        "General AI"
-      ],
-      "entities": [],
       "importanceScore": 70,
       "importance": "Medium",
       "whyItMatters": "General AI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
-      "watchlist": "General AI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+      "watchlist": "GitHub의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     },
     {
       "id": "openai-news-10",
@@ -327,28 +329,6 @@
         "OpenAI"
       ],
       "importanceScore": 70,
-      "importance": "Medium",
-      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
-      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
-    },
-    {
-      "id": "techcrunch-ai-3",
-      "title": "Apple sues OpenAI over alleged trade secret theft",
-      "summary": "Apple alleges the misconduct was directed by OpenAI's senior leadership, including a longtime former employee.",
-      "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
-      "publisher": "TechCrunch AI",
-      "sourceType": "news",
-      "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-      "publishedAt": "2026-07-10T21:00:29.000Z",
-      "category": "Product Update",
-      "topics": [
-        "OpenAI"
-      ],
-      "entities": [
-        "OpenAI",
-        "Apple"
-      ],
-      "importanceScore": 69,
       "importance": "Medium",
       "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
       "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
@@ -482,26 +462,28 @@
       "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     },
     {
-      "id": "techcrunch-ai-5",
-      "title": "SK Hynix raises $26.5B in the biggest foreign IPO in US history, is urged to build new US fabs",
-      "summary": "The AI chip boom just produced its biggest Wall Street moment yet. Now SK Hynix and Samsung are being asked to build U.S. factories.",
-      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
+      "id": "techcrunch-ai-6",
+      "title": "Hugging Face&#8217;s CEO on why companies are done renting their AI",
+      "summary": "Open source AI is booming, according to&#160;Hugging Face&#160;CEO&#160;Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used...",
+      "url": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/",
       "publisher": "TechCrunch AI",
       "sourceType": "news",
       "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-      "publishedAt": "2026-07-10T17:17:12.000Z",
-      "category": "Funding & M&A",
+      "publishedAt": "2026-07-10T14:00:00.000Z",
+      "category": "Model Release",
       "topics": [
         "General AI"
       ],
-      "entities": [],
+      "entities": [
+        "GitHub"
+      ],
       "importanceScore": 67,
       "importance": "Medium",
-      "whyItMatters": "TechCrunch AI의 자금/딜 움직임은 향후 가격 경쟁과 시장 확장 속도에 직접 연결될 수 있다.",
-      "watchlist": "General AI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+      "whyItMatters": "General AI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "GitHub의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     },
     {
-      "id": "the-verge-ai-8",
+      "id": "the-verge-ai-10",
       "title": "The ChatGPT browser is already dead",
       "summary": "OpenAI is already shutting down ChatGPT Atlas, its browser that could do tasks for you on your behalf, less than a year after launching it. Atlas was announced in October, but as part of its wave of news about ChatGPT Work today, the com...",
       "url": "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset",
@@ -541,77 +523,45 @@
       "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     },
     {
-      "id": "techcrunch-ai-2",
-      "title": "Meta removes controversial AI feature on Instagram after backlash",
-      "summary": "\"Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way,\" the company said in a blog post. \"We've heard the feedback that this feature missed the mark...",
-      "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
-      "publisher": "TechCrunch AI",
-      "sourceType": "news",
-      "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
-      "publishedAt": "2026-07-10T23:55:07.000Z",
-      "category": "Product Update",
-      "topics": [
-        "Meta"
-      ],
-      "entities": [
-        "Meta"
-      ],
-      "importanceScore": 66,
-      "importance": "Medium",
-      "whyItMatters": "Meta 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
-      "watchlist": "Meta의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
-    },
-    {
-      "id": "devto-ai-3",
-      "title": "How to Build Your Own RAG Knowledge Base Q&A System with DeepSeek",
-      "summary": "Category: AI Application Engineering / RAG Knowledge Base Q&A Target readers: backend developers, AI full-stack developers, enterprise digital teams, product managers, technical leads, and anyone who wants to turn company documents into...",
-      "url": "https://dev.to/cheng_zhang_45ee857b979b0/how-to-build-your-own-rag-knowledge-base-qa-system-with-deepseek-3dl9",
-      "publisher": "DEV Community AI",
-      "sourceType": "social",
-      "sourceUrl": "https://dev.to/feed/tag/ai",
-      "publishedAt": "2026-07-12T14:10:53.000Z",
-      "category": "Regulation & Policy",
-      "topics": [
-        "OpenAI",
-        "Anthropic",
-        "Meta",
-        "Coding",
-        "Agents",
-        "Enterprise",
-        "Research",
-        "Policy"
-      ],
-      "entities": [
-        "OpenAI",
-        "Anthropic",
-        "Meta",
-        "GitHub"
-      ],
-      "importanceScore": 64,
-      "importance": "Medium",
-      "whyItMatters": "DEV Community AI발 규제 이슈라서 제품 출시 속도보다 법무·리스크 대응 우선순위를 바꿀 수 있다.",
-      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
-    },
-    {
-      "id": "the-verge-ai-2",
-      "title": "Meta turns off the Instagram feature that let users make AI deepfakes of public accounts",
-      "summary": "Following significant backlash, Meta is turning off the feature it announced this week that let users generate AI images based on content from public Instagram accounts just by tagging them. The feature, as originally set up, meant that...",
-      "url": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
+      "id": "the-verge-ai-3",
+      "title": "The fight against AI data centers is just beginning",
+      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the data center buildout, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The...",
+      "url": "https://www.theverge.com/column/963346/ai-data-centers-fight",
       "publisher": "The Verge AI",
       "sourceType": "news",
       "sourceUrl": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
-      "publishedAt": "2026-07-10T23:49:50.000Z",
+      "publishedAt": "2026-07-12T12:00:00.000Z",
+      "category": "Market Pulse",
+      "topics": [
+        "General AI"
+      ],
+      "entities": [],
+      "importanceScore": 66,
+      "importance": "Medium",
+      "whyItMatters": "General AI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "General AI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "techcrunch-ai-3",
+      "title": "Apple sues OpenAI over alleged trade secret theft",
+      "summary": "Apple alleges the misconduct was directed by OpenAI's senior leadership, including a longtime former employee.",
+      "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+      "publisher": "TechCrunch AI",
+      "sourceType": "news",
+      "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "publishedAt": "2026-07-10T21:00:29.000Z",
       "category": "Product Update",
       "topics": [
-        "Meta"
+        "OpenAI"
       ],
       "entities": [
-        "Meta"
+        "OpenAI",
+        "Apple"
       ],
-      "importanceScore": 64,
+      "importanceScore": 65,
       "importance": "Medium",
-      "whyItMatters": "Meta 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
-      "watchlist": "Meta의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     },
     {
       "id": "google-ai-blog-6",
@@ -635,6 +585,25 @@
       "watchlist": "Google의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     },
     {
+      "id": "techcrunch-ai-5",
+      "title": "SK Hynix raises $26.5B in the biggest foreign IPO in US history, is urged to build new US fabs",
+      "summary": "The AI chip boom just produced its biggest Wall Street moment yet. Now SK Hynix and Samsung are being asked to build U.S. factories.",
+      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
+      "publisher": "TechCrunch AI",
+      "sourceType": "news",
+      "sourceUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "publishedAt": "2026-07-10T17:17:12.000Z",
+      "category": "Funding & M&A",
+      "topics": [
+        "General AI"
+      ],
+      "entities": [],
+      "importanceScore": 63,
+      "importance": "Medium",
+      "whyItMatters": "TechCrunch AI의 자금/딜 움직임은 향후 가격 경쟁과 시장 확장 속도에 직접 연결될 수 있다.",
+      "watchlist": "General AI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
       "id": "openai-news-4",
       "title": "ChatGPT is now a partner for your most ambitious work",
       "summary": "ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.",
@@ -654,55 +623,31 @@
       "watchlist": "Agents의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     },
     {
-      "id": "hn-ai-7",
-      "title": "Microsoft joins Google in backing Go for AI agents — OpenAI and Anthropic lag",
-      "summary": "Article URL: https://thenewstack.io/microsoft-agent-framework-go/ Comments URL: https://news.ycombinator.com/item?id=48881161 Points: 3 # Comments: 0",
-      "url": "https://thenewstack.io/microsoft-agent-framework-go/",
-      "publisher": "Hacker News AI",
-      "sourceType": "social",
-      "sourceUrl": "https://hnrss.org/newest?q=AI",
-      "publishedAt": "2026-07-12T13:39:33.000Z",
-      "category": "Product Update",
-      "topics": [
-        "OpenAI",
-        "Anthropic",
-        "Google",
-        "Agents"
-      ],
-      "entities": [
-        "OpenAI",
-        "Anthropic",
-        "Google",
-        "Microsoft"
-      ],
-      "importanceScore": 62,
-      "importance": "Medium",
-      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
-      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
-    },
-    {
       "id": "devto-ai-1",
-      "title": "Apple Is Suing OpenAI Because Hardware Is Still the Moat",
-      "summary": "Apple Is Suing OpenAI Because Hardware Is Still the Moat Apple sued OpenAI on July 10, accusing the company and two former Apple employees of taking confidential hardware information for OpenAI's consumer device work. Treat the verbs car...",
-      "url": "https://dev.to/komo/apple-is-suing-openai-because-hardware-is-still-the-moat-1ofi",
+      "title": "A shipped agent framework ran the hidden payload. My own scanner caught it.",
+      "summary": "The payload never touched the tool description. It sat in an enum value. A property title. smolagents' MCP client handed all of it to the model untouched, and gpt-oss-120b called the export tool on its own, seven runs out of ten, six of...",
+      "url": "https://dev.to/alexlaguardia/a-shipped-agent-framework-ran-the-hidden-payload-my-own-scanner-caught-it-6jl",
       "publisher": "DEV Community AI",
       "sourceType": "social",
       "sourceUrl": "https://dev.to/feed/tag/ai",
-      "publishedAt": "2026-07-12T14:14:47.000Z",
-      "category": "Regulation & Policy",
+      "publishedAt": "2026-07-12T21:57:57.000Z",
+      "category": "Product Update",
       "topics": [
         "OpenAI",
+        "Google",
+        "Meta",
         "Coding",
-        "Policy"
+        "Agents"
       ],
       "entities": [
-        "OpenAI",
-        "Apple"
+        "Google",
+        "Meta",
+        "GitHub"
       ],
       "importanceScore": 60,
       "importance": "Medium",
-      "whyItMatters": "DEV Community AI발 규제 이슈라서 제품 출시 속도보다 법무·리스크 대응 우선순위를 바꿀 수 있다.",
-      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "Google의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     },
     {
       "id": "openai-news-3",
@@ -763,116 +708,155 @@
       "watchlist": "Enterprise의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     },
     {
-      "id": "devto-ai-2",
-      "title": "Introducing Spark UI v1: An Open-Source React Component Registry with an Agent Skill",
-      "summary": "Introducing Spark UI v1: An Open-Source React Component Registry with an Agent Skill ⚡ I’m excited to share Spark UI v1 , the first public version of an open-source component collection built for modern React applications. Spark UI curre...",
-      "url": "https://dev.to/a11en/introducing-spark-ui-v1-an-open-source-react-component-registry-with-an-agent-skill-kn3",
+      "id": "devto-ai-7",
+      "title": "I Built an AI Agent with Claude's Tool-Use Loop (Web Search, SQL, and More)",
+      "summary": "\"AI agent\" gets thrown around so much I figured I should just build one instead of reading more threads about it. The core idea turned out to be small: you put Claude in a loop and hand it some tools. It picks a tool, you run it, you han...",
+      "url": "https://dev.to/venkatarahul27/i-built-an-ai-agent-with-claudes-tool-use-loop-web-search-sql-and-more-885",
       "publisher": "DEV Community AI",
       "sourceType": "social",
       "sourceUrl": "https://dev.to/feed/tag/ai",
-      "publishedAt": "2026-07-12T14:14:27.000Z",
-      "category": "Product Update",
+      "publishedAt": "2026-07-12T21:42:58.000Z",
+      "category": "Research & Safety",
       "topics": [
         "Anthropic",
         "Coding",
-        "Agents"
+        "Agents",
+        "Research"
       ],
       "entities": [
-        "Meta",
+        "Anthropic",
         "GitHub"
       ],
-      "importanceScore": 56,
+      "importanceScore": 57,
       "importance": "Medium",
-      "whyItMatters": "Anthropic 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
-      "watchlist": "Meta의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
-    },
-    {
-      "id": "devto-ai-8",
-      "title": "Build Your Own ChatGPT with Free APIs in 2025",
-      "summary": "Build Your Own ChatGPT with Free APIs in 2025 Imagine being able to create your own AI-powered chatbot, capable of understanding and responding to user input, without breaking the bank or requiring a team of expert developers. Sounds lik...",
-      "url": "https://dev.to/qingluan/build-your-own-chatgpt-with-free-apis-in-2025-3dad",
-      "publisher": "DEV Community AI",
-      "sourceType": "social",
-      "sourceUrl": "https://dev.to/feed/tag/ai",
-      "publishedAt": "2026-07-12T14:03:12.000Z",
-      "category": "Product Update",
-      "topics": [
-        "OpenAI",
-        "Google",
-        "Coding"
-      ],
-      "entities": [
-        "OpenAI",
-        "Google"
-      ],
-      "importanceScore": 56,
-      "importance": "Medium",
-      "whyItMatters": "OpenAI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
-      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+      "whyItMatters": "기술 성능 자체보다도 향후 제품 신뢰도와 엔터프라이즈 도입 명분에 영향을 줄 수 있는 신호다.",
+      "watchlist": "Anthropic의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     },
     {
       "id": "devto-ai-5",
-      "title": "Prompt Cache Minimums: The Docs Under-State by 1.4–2.4x",
-      "summary": "A customer told us prompt caching on our gateway was not kicking in at the token count the model's own documentation promised. We reproduced it, then re-ran every model against a second, independent serving path, one of the largest AI ga...",
-      "url": "https://dev.to/synthorai/prompt-cache-minimums-the-docs-under-state-by-14-24x-49m6",
+      "title": "I Made $487 Last Month Promoting AI Tools as an Affiliate — Here's My Full Stack Breakdown",
+      "summary": "Look, i'm one of those devs who tracks every dollar of side income in a spreadsheet. Call it obsessive, call it accountant brain, but after five years of stacking side hustles on top of my full-time job, that spreadsheet tells me one thi...",
+      "url": "https://dev.to/gentlelogic/i-made-487-last-month-promoting-ai-tools-as-an-affiliate-heres-my-full-stack-breakdown-2hba",
       "publisher": "DEV Community AI",
       "sourceType": "social",
       "sourceUrl": "https://dev.to/feed/tag/ai",
-      "publishedAt": "2026-07-12T14:04:51.000Z",
+      "publishedAt": "2026-07-12T21:46:15.000Z",
       "category": "Research & Safety",
       "topics": [
-        "OpenAI",
-        "Anthropic",
         "Google",
-        "Coding"
+        "Coding",
+        "Agents",
+        "Enterprise",
+        "Research"
       ],
       "entities": [
-        "OpenAI",
-        "Anthropic",
-        "Meta"
+        "Google"
       ],
       "importanceScore": 55,
       "importance": "Medium",
       "whyItMatters": "기술 성능 자체보다도 향후 제품 신뢰도와 엔터프라이즈 도입 명분에 영향을 줄 수 있는 신호다.",
-      "watchlist": "OpenAI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+      "watchlist": "Google의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     },
     {
-      "id": "devto-ai-6",
-      "title": "Borrow $2.500 Instantly: The Quickest Path to Crypto Liquidity",
-      "summary": "You have $5,000 in Bitcoin sitting in your wallet. You need $2,500 in cash—and you need it today. Selling would trigger taxes and cost you future upside. Waiting days for a bank loan isn't an option. ⚡ 🔥 💎👑◢◤ Contact Us ⚡ 🔥 💎👑◢◤ ne...",
-      "url": "https://dev.to/sarfw4e456/borrow-2500-instantly-the-quickest-path-to-crypto-liquidity-20h5",
+      "id": "devto-ai-2",
+      "title": "Adaptive Neuro-Symbolic Planning for heritage language revitalization programs with inverse simulation verification",
+      "summary": "Adaptive Neuro-Symbolic Planning for heritage language revitalization programs with inverse simulation verification Introduction: A Personal Learning Journey I remember the moment vividly—sitting in a dimly lit university library in 2022...",
+      "url": "https://dev.to/rikinptl/adaptive-neuro-symbolic-planning-for-heritage-language-revitalization-programs-with-inverse-41ga",
       "publisher": "DEV Community AI",
       "sourceType": "social",
       "sourceUrl": "https://dev.to/feed/tag/ai",
-      "publishedAt": "2026-07-12T14:04:49.000Z",
-      "category": "Funding & M&A",
+      "publishedAt": "2026-07-12T21:55:13.000Z",
+      "category": "Research & Safety",
+      "topics": [
+        "Agents",
+        "Research"
+      ],
+      "entities": [
+        "Amazon",
+        "GitHub"
+      ],
+      "importanceScore": 48,
+      "importance": "Low",
+      "whyItMatters": "기술 성능 자체보다도 향후 제품 신뢰도와 엔터프라이즈 도입 명분에 영향을 줄 수 있는 신호다.",
+      "watchlist": "Amazon의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "devto-ai-6",
+      "title": "RAG - Meta Filtering and Reranking",
+      "summary": "Generally, when a user asks a query, the system searches for the relevant chunks stored in the vector database using cosine similarity. The better we can filter the data, the smaller the search space becomes, resulting in faster and more...",
+      "url": "https://dev.to/ramya_perumal_e93721ef2fa/rag-meta-filtering-and-reranking-22i1",
+      "publisher": "DEV Community AI",
+      "sourceType": "social",
+      "sourceUrl": "https://dev.to/feed/tag/ai",
+      "publishedAt": "2026-07-12T21:43:55.000Z",
+      "category": "Research & Safety",
+      "topics": [
+        "Meta"
+      ],
+      "entities": [
+        "Meta"
+      ],
+      "importanceScore": 47,
+      "importance": "Low",
+      "whyItMatters": "기술 성능 자체보다도 향후 제품 신뢰도와 엔터프라이즈 도입 명분에 영향을 줄 수 있는 신호다.",
+      "watchlist": "Meta의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "devto-ai-8",
+      "title": "The Dynamic Student Profile: Automating Practice Notes and Progress Tracking with AI",
+      "summary": "We need to produce a 400-500 word article. Let's target around 440-460 words. Structure: Title, maybe intro, core, mini-scenario, implementation steps, conclusion. Use markdown with # title, ## subheadings. Include facts: assigned practi...",
+      "url": "https://dev.to/ken_deng_ai/the-dynamic-student-profile-automating-practice-notes-and-progress-tracking-with-ai-472d",
+      "publisher": "DEV Community AI",
+      "sourceType": "social",
+      "sourceUrl": "https://dev.to/feed/tag/ai",
+      "publishedAt": "2026-07-12T21:41:41.000Z",
+      "category": "Product Update",
+      "topics": [
+        "Agents"
+      ],
+      "entities": [],
+      "importanceScore": 45,
+      "importance": "Low",
+      "whyItMatters": "Agents 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "Agents의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+    },
+    {
+      "id": "hn-ai-8",
+      "title": "Elsevier's global survey of 3k researchers on use of AI tools",
+      "summary": "Article URL: https://www.elsevier.com/about/press-releases/elseviers-global-survey-of-3-000-researchers-reveals-less-than-half-have Comments URL: https://news.ycombinator.com/item?id=48884549 Points: 3 # Comments: 1",
+      "url": "https://www.elsevier.com/about/press-releases/elseviers-global-survey-of-3-000-researchers-reveals-less-than-half-have",
+      "publisher": "Hacker News AI",
+      "sourceType": "social",
+      "sourceUrl": "https://hnrss.org/newest?q=AI",
+      "publishedAt": "2026-07-12T20:38:16.000Z",
+      "category": "Research & Safety",
       "topics": [
         "General AI"
       ],
       "entities": [],
       "importanceScore": 45,
       "importance": "Low",
-      "whyItMatters": "DEV Community AI의 자금/딜 움직임은 향후 가격 경쟁과 시장 확장 속도에 직접 연결될 수 있다.",
+      "whyItMatters": "기술 성능 자체보다도 향후 제품 신뢰도와 엔터프라이즈 도입 명분에 영향을 줄 수 있는 신호다.",
       "watchlist": "General AI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     },
     {
-      "id": "devto-ai-7",
-      "title": "Ready for $2.500? Access Your Crypto-Backed Loan Right Now",
-      "summary": "You have $5,000 in Bitcoin. You need $2,500 in cash. Selling would trigger capital gains taxes and cost you future upside—but you need liquidity now. ⚡ 🔥 💎👑◢◤ Contact Us ⚡ 🔥 💎👑◢◤ needhelp@omnilender.com ⚡ 🔥 💎👑◢◤ +1 (301) 760 231...",
-      "url": "https://dev.to/sarfw4e456/ready-for-2500-access-your-crypto-backed-loan-right-now-4cm5",
-      "publisher": "DEV Community AI",
+      "id": "hn-ai-3",
+      "title": "Show HN: Adaptive Recall, persistent memory for AI assistants over MCP",
+      "summary": "Article URL: https://www.adaptiverecall.com/ Comments URL: https://news.ycombinator.com/item?id=48884815 Points: 4 # Comments: 0",
+      "url": "https://www.adaptiverecall.com/",
+      "publisher": "Hacker News AI",
       "sourceType": "social",
-      "sourceUrl": "https://dev.to/feed/tag/ai",
-      "publishedAt": "2026-07-12T14:04:11.000Z",
-      "category": "Funding & M&A",
+      "sourceUrl": "https://hnrss.org/newest?q=AI",
+      "publishedAt": "2026-07-12T21:08:20.000Z",
+      "category": "Product Update",
       "topics": [
-        "Research"
+        "General AI"
       ],
       "entities": [],
-      "importanceScore": 45,
+      "importanceScore": 39,
       "importance": "Low",
-      "whyItMatters": "DEV Community AI의 자금/딜 움직임은 향후 가격 경쟁과 시장 확장 속도에 직접 연결될 수 있다.",
-      "watchlist": "Research의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
+      "whyItMatters": "General AI 흐름을 보여주는 기사라서 경쟁사 포지셔닝과 로드맵 우선순위를 다시 보게 만든다.",
+      "watchlist": "General AI의 후속 발표, 가격 정책, 파트너십 확장 여부를 1주일 단위로 추적하는 게 좋다."
     }
   ]
 }
