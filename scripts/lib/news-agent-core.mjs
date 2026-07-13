@@ -181,6 +181,8 @@ export function buildDigest(stories, collections) {
   const categories = tally(stories.map((story) => story.category), 6, stories.length);
   const mustWatch = stories.slice(0, 4).map((story) => `${story.publisher}: ${story.title}`);
 
+  const leadTheme = topThemes[0]?.value;
+
   return {
     generatedAt: new Date().toISOString(),
     automation: {
@@ -193,7 +195,7 @@ export function buildDigest(stories, collections) {
       buildCommand: 'npm run agent:run && npm run build',
     },
     brief: {
-      headline: `${critical}개의 Critical 신호와 ${topThemes[0]?.value || '핵심 테마'}가 오늘의 흐름을 주도`,
+      headline: buildHeadline(leadTheme, critical, stories.length),
       summary: buildSummary(stories, critical, topThemes, topEntities),
       topThemes: topThemes.map((item) => item.value),
       mustWatch,
@@ -384,6 +386,15 @@ function applySourceMix(stories) {
     used[story.sourceType] += 1;
     return true;
   });
+}
+
+function buildHeadline(leadTheme, criticalCount, totalCount) {
+  // 내부 등급 용어("Critical")를 헤드라인에 노출하지 않고, 핵심 이슈가 있을 때만 자연스럽게 언급한다.
+  const theme = leadTheme || '주요 이슈';
+  if (criticalCount > 0) {
+    return `주목할 핵심 이슈 ${criticalCount}건, ${theme} 중심으로 움직인 하루`;
+  }
+  return `${theme}가 주도한 하루 — 오늘 수집된 주요 뉴스 ${totalCount}건`;
 }
 
 function buildSummary(stories, criticalCount, topThemes, topEntities) {
