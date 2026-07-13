@@ -1,0 +1,93 @@
+{
+  "classificationCases": [
+    {
+      "title": "OpenAI releases GPT-5.6 for enterprise reasoning",
+      "description": "The new GPT model is available to enterprise customers.",
+      "expectedCategory": "Model Release",
+      "expectedEntities": ["OpenAI"]
+    },
+    {
+      "title": "Anthropic raises $4 billion in Series F funding",
+      "description": "The Claude maker plans to expand enterprise sales.",
+      "expectedCategory": "Funding & Investment",
+      "expectedEntities": ["Anthropic"]
+    },
+    {
+      "title": "Microsoft acquires AI infrastructure startup",
+      "description": "The acquisition expands Microsoft data center capacity.",
+      "expectedCategory": "M&A",
+      "expectedEntities": ["Microsoft"]
+    },
+    {
+      "title": "EU regulators publish AI Act compliance guidance",
+      "description": "The policy sets new requirements for model providers.",
+      "expectedCategory": "Regulation & Policy",
+      "expectedEntities": []
+    },
+    {
+      "title": "Google partners with Samsung on Gemini devices",
+      "description": "The partnership brings Gemini to additional mobile products.",
+      "expectedCategory": "Partnerships",
+      "expectedEntities": ["Google", "Samsung"]
+    },
+    {
+      "title": "NVIDIA unveils new GPU platform for AI data centers",
+      "description": "The semiconductor platform targets lower inference costs.",
+      "expectedCategory": "Infrastructure & Chips",
+      "expectedEntities": ["NVIDIA"]
+    },
+    {
+      "title": "New benchmark study evaluates agent safety",
+      "description": "Researchers released a dataset for jailbreak evaluation.",
+      "expectedCategory": "Research & Safety",
+      "expectedEntities": []
+    },
+    {
+      "title": "Apple rolls out an AI assistant feature",
+      "description": "The product update reaches customers this week.",
+      "expectedCategory": "Product Update",
+      "expectedEntities": ["Apple"]
+    },
+    {
+      "title": "UN publishes its first global AI risk report",
+      "description": "Governments will discuss policy recommendations next month.",
+      "expectedCategory": "Regulation & Policy",
+      "expectedEntities": []
+    },
+    {
+      "title": "AWS deploys Anthropic Claude for enterprise customers",
+      "description": "The partnership expands model access through Amazon Bedrock.",
+      "expectedCategory": "Partnerships",
+      "expectedEntities": ["Amazon", "Anthropic"]
+    }
+  ],
+  "rejectionCases": [
+    {
+      "title": "How to Bypass hCaptcha and reCAPTCHA in Python",
+      "description": "A step-by-step guide.",
+      "url": "https://example.com/captcha"
+    },
+    {
+      "title": "Buying Telegram Accounts with High Quality",
+      "description": "Bulk accounts for sale.",
+      "url": "https://example.com/accounts"
+    },
+    {
+      "title": "I made $487 with AI affiliate passive income",
+      "description": "Use my promo code.",
+      "url": "https://example.com/affiliate"
+    }
+  ],
+  "duplicatePairs": [
+    {
+      "left": "Apple sues OpenAI for allegedly stealing hardware secrets",
+      "right": "Apple sues OpenAI over alleged trade secret theft",
+      "entities": ["Apple", "OpenAI"]
+    },
+    {
+      "left": "OpenAI releases GPT-5.6 for Microsoft 365 Copilot",
+      "right": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
+      "entities": ["OpenAI", "Microsoft"]
+    }
+  ]
+}

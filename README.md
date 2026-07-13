@@ -60,8 +60,7 @@ npm run build
 vercel --prod
 ```
 
-`OPENAI_API_KEY`가 있으면 `npm run agent:run` 단계에서 상위 기사에 대해 LLM 기반 `why it matters / watch next / editor note`를 생성한다.  
-키가 없으면 휴리스틱 요약으로 자동 fallback 된다.
+`npm run agent:run`은 LLM 분석을 필수로 검증한다. `OPENAI_API_KEY`가 있으면 OpenAI Responses API의 strict JSON Schema를 사용하고, 없으면 로컬 OpenClaw Gateway의 `openai/gpt-5.5`를 사용한다. 검증된 한국어 요약·근거·인사이트가 없으면 휴리스틱으로 게시하지 않고 직전 성공 digest를 유지한다.
 
 ## 자동 아침 수집 구조
 
@@ -69,13 +68,9 @@ vercel --prod
   - 맥미니에서 오전 7시에 에이전트 실행하는 launchd 예시
 - `docs/openclaw-cron-workflow.md`
   - OpenClaw cron + 별도 세션 워크플로 운영 가이드
-- `.github/workflows/daily-intelligence.yml`
-  - 매일 `07:00 KST`에 실행
-  - `npm ci` → `npm run agent:run`
-  - `src/data/live-intelligence.json` 변경 시 자동 커밋
 - `vercel.json`
-  - Vercel 빌드 시 `npm run build:newsstand` 실행
-  - 저장소 push만 되면 최신 digest 기준으로 정적 배포 가능
+  - Vercel에서는 이미 검증·게시된 digest만 정적 빌드
+  - 수집/LLM 실행은 OpenClaw의 오전 7시 워크플로에서만 수행
 
 ## 필요한 환경변수
 
@@ -83,8 +78,12 @@ vercel --prod
 
 ```bash
 OPENAI_API_KEY=...
-OPENAI_MODEL=gpt-5-mini
+OPENAI_MODEL=gpt-5.6-terra
 INTELLIGENCE_ENABLE_LLM=true
+OPENCLAW_GATEWAY_LLM=true
+OPENCLAW_INTELLIGENCE_MODEL=openai/gpt-5.5
+INTELLIGENCE_MIN_STORIES=5
+INTELLIGENCE_WATCHLIST={"companies":["OpenAI"],"topics":["agents"],"regions":["Korea"]}
 ```
 
 GitHub Actions에서는 `OPENAI_API_KEY`를 repository secret으로 넣고, Vercel에서는 같은 이름으로 project env에 넣으면 된다.
@@ -104,9 +103,10 @@ npm run agent:publish
 
 이 3단계 산출물을 기준으로 디버깅할 수 있다.
 
-## 다음 단계 추천
+## 품질 게이트
 
-1. RSS 외에 X / Reddit / YouTube / Product Hunt 같은 소스를 API 기반으로 추가
-2. 기사 본문까지 긁어와서 LLM으로 `executive summary`, `why it matters`, `watchlist` 품질 개선
-3. 관심 키워드 저장, 최근 본 기사, 북마크 같은 retention 기능 추가
-4. 팀별 이메일/슬랙 아침 브리프 발송 연결
+- 14개 공식·미디어·정부·연구·discovery 소스를 독립적으로 수집하고 개별 실패를 격리한다.
+- 최근 성공 watermark와 6시간 overlap을 사용하되 최대 72시간을 넘기지 않는다.
+- 소셜/커뮤니티 discovery와 스팸은 브리핑 전에 분리한다.
+- 본문 전문, 근거, 한국어 요약, 의미 기반 사건 중복 제거, 관련 출처, 사용자 watchlist 점수를 보존한다.
+- 테스트·라벨 평가·LLM 스키마·게시 품질 게이트 중 하나라도 실패하면 배포와 publish를 중단한다.

@@ -7,12 +7,14 @@
     "agent:fetch": "node scripts/fetch-sources.mjs",
     "agent:normalize": "node scripts/normalize-intelligence.mjs",
     "agent:run": "node scripts/run-news-agent.mjs",
+    "agent:eval": "node scripts/evaluate-news-agent.mjs",
     "agent:publish": "node scripts/publish-if-changed.mjs",
     "dev": "vite",
     "build": "vite build",
     "build:newsstand": "npm run agent:run && vite build",
     "ingest": "node scripts/generate-intelligence.mjs",
     "lint": "eslint .",
+    "test": "node --test tests/*.test.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

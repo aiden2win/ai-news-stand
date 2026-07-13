@@ -24,5 +24,6 @@ dist-ssr
 *.sw?
 data/raw/
 data/processed/
+data/state/
 logs/agent/
 .vercel
