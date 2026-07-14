@@ -58,7 +58,7 @@ export async function synthesizeBrief(stories, options = {}) {
       '기사에 없는 사실을 만들지 않는다. 교차 확인 수준과 출처 유형을 구분한다.',
       '한국어로 간결하게 작성하고, 기업의 제품·가격·파트너십·규제·인프라 변화가 의사결정에 미치는 영향을 설명한다.',
       '동일 사건을 반복하지 말고 하루 전반의 변화, 경쟁 구도, 앞으로 확인할 지표를 종합한다.',
-      `<UNTRUSTED_VERIFIED_STORIES>${JSON.stringify(topStories)}</UNTRUSTED_VERIFIED_STORIES>`,
+      `<UNTRUSTED_VERIFIED_STORIES>${serializeUntrusted(topStories)}</UNTRUSTED_VERIFIED_STORIES>`,
     ].join('\n'),
     validate: validateBriefAnalysis,
     maxOutputTokens: 3_000,
@@ -157,8 +157,8 @@ function storyAnalysisPrompt(stories, watchlist) {
     'evidence는 원문을 길게 복사하지 말고, 판단을 뒷받침하는 짧은 사실 단서로 작성한다.',
     'whyItMatters는 일반론이 아니라 경쟁 구도·시장·제품·매출·운영 중 해당되는 구체적 영향을 설명한다.',
     'watchlist는 다음 7일 동안 관찰할 발표·가격·고객·규제·벤치마크 등 측정 가능한 후속 신호를 제시한다.',
-    `사용자 watchlist: ${JSON.stringify(watchlist || {})}`,
-    `<UNTRUSTED_ARTICLES>${JSON.stringify(input)}</UNTRUSTED_ARTICLES>`,
+    `사용자 watchlist: ${serializeUntrusted(watchlist || {})}`,
+    `<UNTRUSTED_ARTICLES>${serializeUntrusted(input)}</UNTRUSTED_ARTICLES>`,
   ].join('\n');
 }
 
@@ -212,6 +212,10 @@ const briefSchema = {
 
 function scoreSchema() {
   return { type: 'integer', minimum: 0, maximum: 100 };
+}
+
+export function serializeUntrusted(value) {
+  return JSON.stringify(value).replaceAll('<', '\\u003c').replaceAll('>', '\\u003e');
 }
 
 function extractResponseText(data) {
