@@ -1,7 +1,7 @@
 # AI News Stand
 
-매일 아침 자동으로 업데이트되는 `독립형 AI 뉴스 스탠드 웹사이트` 프로젝트다.  
-기존 `Market & Competitor Intelligence Dashboard`와는 분리된 별도 프로젝트이며, 로컬 AI 뉴스 에이전트가 사이트용 데이터를 만든다.
+매일 아침 자동으로 업데이트되는 `독립형 AI 뉴스·시그널 웹사이트` 프로젝트다.
+로컬 AI 뉴스 에이전트가 공식 발표와 주요 보도를 수집하고, 확인된 사실·제한적 해석·후속 확인 지표가 구분된 사이트용 데이터를 만든다.
 
 ## 지금 들어간 핵심 구조
 
@@ -60,7 +60,7 @@ npm run build
 vercel --prod
 ```
 
-`npm run agent:run`은 LLM 분석을 필수로 검증한다. `OPENAI_API_KEY`가 있으면 OpenAI Responses API의 strict JSON Schema를 사용하고, 없으면 로컬 OpenClaw Gateway의 `openai/gpt-5.5`를 사용한다. 검증된 한국어 요약·근거·인사이트가 없으면 휴리스틱으로 게시하지 않고 직전 성공 digest를 유지한다.
+`npm run agent:run`은 LLM 분석을 필수로 검증한다. `OPENAI_API_KEY`가 있으면 OpenAI Responses API의 strict JSON Schema를 사용하고, 없으면 로컬 OpenClaw Gateway의 `openai/gpt-5.5`를 사용한다. 검증된 한국어 사실 요약·근거·조건부 해석이 없거나 근거 없는 확정 표현이 포함되면 게시하지 않고 직전 성공 digest를 유지한다.
 
 ## 자동 아침 수집 구조
 
@@ -110,3 +110,4 @@ npm run agent:publish
 - 소셜/커뮤니티 discovery와 스팸은 브리핑 전에 분리한다.
 - 본문 전문, 근거, 한국어 요약, 의미 기반 사건 중복 제거, 관련 출처, 사용자 watchlist 점수를 보존한다.
 - 테스트·라벨 평가·LLM 스키마·게시 품질 게이트 중 하나라도 실패하면 배포와 publish를 중단한다.
+- 기사에 실제 결과 수치가 없으면 매출·점유율·주가 영향을 확정하지 않고 후속 확인 항목으로 분리한다.

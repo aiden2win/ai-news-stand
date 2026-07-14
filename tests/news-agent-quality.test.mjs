@@ -8,6 +8,7 @@ import {
   inferCategory,
   inferEntities,
   normalizeSnapshot,
+  hasUnsupportedCertainty,
   validateStoryAnalysis,
 } from '../scripts/lib/news-agent-quality.mjs';
 import { serializeUntrusted } from '../scripts/lib/news-agent-llm.mjs';
@@ -64,6 +65,9 @@ test('LLM story schema validation requires Korean, evidence and complete ids', (
   };
   assert.equal(validateStoryAnalysis(valid, ['a']), true);
   assert.equal(validateStoryAnalysis({ stories: [{ ...valid.stories[0], summaryKo: 'English only summary that is intentionally invalid for the validator.' }] }, ['a']), false);
+  assert.equal(validateStoryAnalysis({ stories: [{ ...valid.stories[0], whyItMatters: '이 발표는 AI 시장을 재편했고 경쟁사의 매출에 영향을 줄 것입니다.' }] }, ['a']), false);
+  assert.equal(hasUnsupportedCertainty('이 발표로 AI 시장이 재편됐다.'), true);
+  assert.equal(hasUnsupportedCertainty('실제 시장 영향은 후속 지표로 확인해야 합니다.'), false);
 });
 
 test('publication quality gate blocks social, stale, non-Korean or non-LLM output', () => {

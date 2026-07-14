@@ -233,7 +233,7 @@ export function validateStoryAnalysis(input, expectedIds) {
   return input.stories.every((item) =>
     isString(item.id) && isString(item.titleKo, 3) && isString(item.summaryKo, 40) && containsHangul(item.summaryKo) &&
     isString(item.category, 3) && stringArray(item.companies) && stringArray(item.technologies) &&
-    stringArray(item.keyFacts, 1) && stringArray(item.evidence, 1) && isString(item.whyItMatters, 30) &&
+    stringArray(item.keyFacts, 1) && stringArray(item.evidence, 1) && isString(item.whyItMatters, 30) && !hasUnsupportedCertainty(item.whyItMatters) &&
     isString(item.watchlist, 20) && stringArray(item.affectedMarkets) &&
     ['confidence', 'novelty', 'decisionRelevance', 'competitiveImpact', 'marketImpact', 'followUpPotential'].every((key) => Number.isFinite(item[key]) && item[key] >= 0 && item[key] <= 100)
   );
@@ -242,7 +242,20 @@ export function validateStoryAnalysis(input, expectedIds) {
 export function validateBriefAnalysis(input) {
   return Boolean(input && isString(input.headline, 5) && isString(input.summary, 80) && containsHangul(input.summary) &&
     isString(input.marketShift, 30) && stringArray(input.topThemes, 1) && stringArray(input.mustWatch, 2) &&
-    stringArray(input.companyMoves, 1) && isString(input.editorNote, 20));
+    stringArray(input.companyMoves, 1) && isString(input.editorNote, 20) &&
+    /기사|발행본|보도|발표|관찰|확인/.test(input.marketShift) && !hasUnsupportedCertainty(input.marketShift) &&
+    /뉴스|기사|공식 발표|데이터|근거|범위|한계/.test(input.editorNote));
+}
+
+export function hasUnsupportedCertainty(value = '') {
+  return [
+    /시장(?:을|이)? 재편(?:했다|했고|됐다|하고 있다)/,
+    /경쟁 구도(?:를|가) (?:바꿨|재편했|재편됐)/,
+    /핵심 전장(?:으로)? (?:됐다|자리잡았다|부상했다)/,
+    /직접(?:적인)? 영향을 (?:미쳤다|줬다)/,
+    /매출(?:이|을) (?:증가했다|확대했다|끌어올렸다)/,
+    /점유율(?:이|을) (?:상승했다|확대됐다|확대했다)/,
+  ].some((pattern) => pattern.test(String(value)));
 }
 
 export function evaluateDigest(digest, options = {}) {
